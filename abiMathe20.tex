@@ -1,0 +1,1005 @@
+%%This is a very basic article template.
+%%There is just one section and two subsections.
+\documentclass{article}
+
+\usepackage[ansinew]{inputenc}
+\usepackage{ngerman}
+\usepackage{amsmath}
+\usepackage{relsize}
+\usepackage{a4wide}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{mathtools}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.7}
+
+\usetikzlibrary{automata,arrows,positioning,calc} % für Markov-Ketten
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1em}
+
+\begin{document}
+
+
+\title{Vorschlag zum Mathe-Abitur 2020\\[0.2em]\smaller{}an der IGS Auguste
+Cornelius Mainz-Hechtsheim}
+
+\author{Stefan Görig}
+\date{\today}
+\maketitle
+\thispagestyle{empty}
+
+
+\newpage
+\section{Unterrichtliche Voraussetzungen}
+
+\subsection{Vorschlag I: Hypothesentests}
+
+Hypothesentests wurden im Schuljahr 12.2 noch vor dem Lockdown behandelt und im
+Schuljahr 13 wiederholt.  Fehler 1. und 2. Art wurden im Unterricht
+anhand überlappender Graphen von Binomialverteilungen besprochen;
+Vierfeldertafeln wurden nur im Zusammenhang mit der Bayesschen Regel 
+besprochen.
+
+Die Verknüpfung von beidem, wie in Aufgabe 3c gefordert, stellt damit eine
+Transferleistung dar.
+
+\subsection{Vorschlag II: Markovketten}
+
+Markovketten wurden im Schuljahr 12.1 besprochen und in 13 wiederholt. 
+Zustandsdiagramme wurden selbstständig gezeichnet, Fundamentalmatrizen
+aufgestellt und angewendet.  Die SuS sind den Umgang mit dem Taschenrechner
+geübt und können z.B. Inversen damit schnell bestimmen.  Die Inversenbildung von
+Hand mit Formel oder Gauß-Jordan-Verfahren wurde aber auch sowohl in
+Klassenstufe 12.1 als auch in 13 geübt.
+
+Der umgekehrte Weg, aus der Fundamentalmatrix das Zustandsdiagramm zu bestimmen,
+wurde nicht im Unterricht behandelt und stellt somit eine Transferleistung dar. 
+
+\subsection{Vorschlag III: Affine Abiildungen}
+
+Affine Abbildungen wurden am anfang von 12.1 beprochen und in 13 wiederholt. 
+Mit dem Aufstellen von Abbildungsgleichungen sind die SuS ebenso vertraut wie
+mit dem Abbildungen von Punkten und Geraden.
+
+Die Vektordarstellung von aus Geraden und Kreisbögen zusammengesetzter Bilder,
+die Anpassung eines ebenen Bildes an eine nicht-senkrechte Perspektive wurde in
+13 besprochen, ebenso Drehmatrizen mit zeitlich veränderlichem Winkel.
+
+Die Anwendung von Drehmatrizen auf zweidimensionale Abbildungen ist allerdings
+neu und setzt einen Transfer voraus.
+
+\newpage
+\section{Zuordnung zu Anforderungsbereichen, Zeitansätze und Bewertung}
+
+\subsection{Vorschlag I}
+
+\begin{tabular}{c||c|c|c||c|c|c|c|c||c|c|c|c|c|c}
+ Aufg. & A1 & A2 & A3 & L1 & L2 & L3 & L4 & L5 & K1 & K2 & K3 & K4
+ & K5 & K6 \\
+ \hline
+ 1 & 13 & 2 & & x & x & & & x & x & & x &  & x & \\
+ 2 & 3 & 12 & & x & & & x & x & x & & x & & x & \\
+ 3 & & 7 & 11 & & & & x & x & x & x & x & x &  & x \\
+ \hline
+ \( \sum \) & 16 & 21 & 11 & & & & & & & & & & &
+\end{tabular}
+
+Zeitansatz: 80 Minuten.
+
+\subsection{Vorschlag II}
+
+\begin{tabular}{c||c|c|c||c|c|c|c|c||c|c|c|c|c|c}
+ Aufg. & A1 & A2 & A3 & L1 & L2 & L3 & L4 & L5 & K1 & K2 & K3 & K4
+ & K5 & K6 \\
+ \hline
+ 1 & 14 & & & x & & & & & & & & & x & \\
+ 2 & & 20 & & x & & & & x & x & & & x & x & \\
+ 3 & & 7 & 11 & x & & & x & x & x & x & & x & x & x \\
+ \hline
+ \( \sum \) & 14 & 27 & 11 & & & & & & & & & & &
+\end{tabular}
+
+Zeitansatz: 80 Minuten.
+
+\subsection{Vorschlag III}
+
+\begin{tabular}{c||c|c|c||c|c|c|c|c||c|c|c|c|c|c}
+ Aufg. & A1 & A2 & A3 & L1 & L2 & L3 & L4 & L5 & K1 & K2 & K3 & K4
+ & K5 & K6 \\
+ \hline
+ 1 & 10 & & & x & x & x & x & & & & & x & x & \\
+ 2 & & 4 & 9 & x & x & x & & & & x & x & x & x & \\
+ 3 & 4 & 15 & 3 & x & & x & x & & & & x & x & x & \\
+ \hline
+ \( \sum \) & 16 & 19 & 12 & & & & & & & & & & &
+\end{tabular}
+
+Zeitansatz: 80 Minuten.
+
+\subsection{Legende}
+\begin{minipage}[h]{0.3\textwidth}
+\textbf{Anforderungsbereiche}
+
+\vspace{0.2cm}
+\begin{tabular}{c|c}
+ A1 & Reproduktion \\
+ A2 & Anwendung \\
+ A3 & Transfer
+\end{tabular}
+
+\vspace{1.2cm}
+\end{minipage}
+\hspace{0.2cm}
+\begin{minipage}[h]{0.3\textwidth}
+\textbf{Leitideen}
+
+\vspace{0.2cm}
+\begin{tabular}{c|c}
+ L1 & Algorithmus \\
+ L2 & Messen \\
+ L3 & Raum und Form \\
+ L4 & Funktion \\
+ L5 & Zufall
+\end{tabular}
+
+\vspace{0.5cm}
+\end{minipage}
+\hspace{0.2cm}
+\begin{minipage}[h]{0.3\textwidth}
+\textbf{Kompetenzbereiche}
+
+\vspace{0.2cm}
+\begin{tabular}{c|c}
+ K1 & argumentieren \\
+ K2 & Probleme lösen \\
+ K3 & modellieren \\
+ K4 & darstellen \\
+ K5 & Technik nutzen \\
+ K6 & kommunizieren
+\end{tabular}
+
+\end{minipage}
+
+
+\newpage
+\section*{Vorschlag I: Hypothesentests}
+\label{sec:VorschlagI}
+
+\begin{minipage}[h]{0.45\textwidth}
+
+Laut Statistischem Landesamt hat der Landkreis Hintertupfingen hat 36.811
+Einwohner, davon sind 18.760 weiblich und 15.312 sind über sechzig Jahre alt.
+
+\vspace{0.2cm}
+Laut einer repräsentativen Stichprobe bezeichnen sich \( 14 \% \) der Befragten 
+selbst als Skeptiker:Innen der Corona-Eindämmungsmaßnahmen.
+	
+\end{minipage}%
+\hspace{0.5cm}%
+\begin{minipage}[h]{0.45\textwidth}
+	\includegraphics[width=1.0\textwidth]{bilder/Impfung.jpg}%\captionof{figure}{Ortsfaktoren}
+	\label{fig:Gameshow}
+	
+\end{minipage}
+
+
+\subsection*{Aufgabe 1 - Grundlegende Statistik}
+
+\vspace{0.2cm}
+a) Bestimme den Anteil
+
+\vspace{-12pt}
+\begin{enumerate}[label=\roman*)]
+  \item weiblicher Einwohner,
+  \item männlicher Einwohner über sechzig Jahre,
+  \item männlicher Einwohner unter den den über Sechzigjährigen.
+\end{enumerate}
+
+b) Bestimme die Wahrscheinlichkeit p, dafür, dass von 50 zufällig
+ausgewählten Bürgern des Landkreises Hintertupfingen
+
+\vspace{-12pt}
+\begin{enumerate}[label=\roman*)]
+  \item 27 weiblich sind
+  \item höchstens 24 weiblich sind
+  \item mindestens 19 männlich sind
+  \item zwischen 26 und 28 weiblich sind.
+\end{enumerate}
+
+c) Schätze den Anteil weiblicher Corona-Skeptiker laut Datenlage.
+  
+d) Diskutiere die Aussagekraft deiner Schätzung aus Aufgabenteil c.
+
+%Balkendiagramm/ Histogramm/ Säulendiagramm zeichnen?
+
+
+
+
+\subsection*{Aufgabe 2 - Hypothesentest}
+
+Das Gesundheitsamt behauptet, dass im örtlichen Schlachthof \( 5 \% \) der \(
+1.235 \) Beschäftigten mit dem Corona-Virus infiziert sind.  Der Schlachthof
+soll deswegen vorübergehend geschlossen werden.
+
+Ein \emph{Querdenker} findet die Maßnahme unangebracht. Er verweist darauf,
+dass er "`mindestens acht"' Mitarbeiter des Schlachthofs persönlich kenne
+und keiner davon als Corona-positiv getestet worden sei.
+
+a) Diskutiere die Aussage des Querdenkes hinsichtlich der Konzepte
+\emph{Relevanz} und \emph{Signifikanz}.
+
+b) Ein statistischer Test soll die Kritiker beruhigen.  Getestet werden soll die
+Aussage "`Die Infektionsrate liegt bei 5 \%"' gegen die Aussage "`Die Infektionsrate ist
+kleiner als 5\%"'.  Begründe, welche der beiden Aussage zur \emph{Nullhypothese}
+\( H_0 \) und welche zur \emph{Alternative} \( H_1 \) erklärt werden sollte.
+
+c) Alle Mitarbeiter zu testen wäre extrem aufwändig. Andererseits schreibt
+\emph{3-}\(\sigma\)\emph{-Regel} eine bestimmte Mindestgröße für den
+Stichprobenumfang \( n \) vor.  Bestimme ihn.
+
+d) Formuliere nun einen Hypothesentest mit einem Stichprobenumfang von \( n =
+200 \) zu einem Signifikanzniveau von \( \alpha =  5 \% \), mit dem die Zweifel
+der Querdenker überpüft werden können.
+
+e) Angenommen, der Test liefert ein Ergebnis von \( k = 12 \) Corona-positiven
+Personen.  Bestimme nun auf der Basis dieses Wertes das Vertrauensintervall
+\( I \) für eine Schätzung des wahren Wertes der Infizierten zu einem
+Vetrauensniveau von \( v = 90\% \).
+
+
+\subsection*{Aufgabe 3 - Gütekriterien beim Testen}
+
+Die Querdenker sind noch nicht überzeugt.  Als nächstes zweifeln sie die
+Zuverlässigkeit der Tests an. 
+
+a) Erkläre die statistischen Konzepte \emph{Fehler 1.} und \emph{2. Art} bzw. im 
+Anwendungsfall medizinischer Diagnostik die Konzepte \emph{Sensitivität} \( s \)
+und \emph{Spezifität} \( z \).
+
+\begin{minipage}[h]{0.35\textwidth}
+
+b) Erkläre, inwiefern Fehler 1. und 2. Art von einander abhängen und
+was man tun kann (und was nicht), um beide zu minimieren.
+
+\vspace{0.2cm}
+Du kannst dazu das nebenstehende Diagramm benutzen.
+	
+\end{minipage}%
+\hspace{0.5cm}%
+\begin{minipage}[h]{0.55\textwidth}
+\begin{tikzpicture}[
+    declare function={binom(\k,\n,\p)=\n!/(\k!*(\n-\k)!)*\p^\k*(1-\p)^(\n-\k);}
+]
+\begin{axis}[
+    samples at={0,...,40},
+    yticklabel style={
+        /pgf/number format/fixed,
+        /pgf/number format/fixed zerofill,
+        /pgf/number format/precision=1
+    },
+    ybar=0pt, bar width=1
+]
+\addplot [fill=cyan, fill opacity=1] {binom(x,40,0.3)};
+\addlegendentry{$p_{v}=0.3$}
+\addplot [fill=orange, fill opacity=0.5] {binom(x,40,0.5)};
+\addlegendentry{$p_w=0.5$}
+\end{axis}
+\end{tikzpicture}
+\end{minipage}
+
+Eine andere Gruppe von Querdenkern schlägt nun vor, die Bevölkerung in voller
+Breite zu testen, damit alle Infizierten in Quarantäne gesteckt werden
+können, bis keine Ansteckungsgefahr mehr droht.
+
+c) Erläutere den Vorschlag anhand einer Vierfeldertafel.  Gehe dazu
+von einer Sensitivität von \( s = 99 \% \) sowie einer Spezifität von
+ebenfalls \( z = 99 \% \) aus.  Nimm ferner eine Rate von 80
+Infizierten je 100.000 Einwohnern und eine Bevölkerungszahl von 82.000.000
+Bürgern an.
+
+
+\newpage
+\section*{Vorschlag I - Musterlösung}
+\label{sec:VorschlagIIIMusterloesung}
+
+\subsection*{Aufgabe 1 - Grundlegende Statistik}
+
+a) \hspace{5mm} i) \( p(w) = \frac{18.760}{36.811} =  51.0 \%\) 
+
+\hspace{8mm} ii) \( p(m \cap 60+) = \frac{36.811 - 18.760}{36.811} \cdot
+  \frac{15.312}{36.811} = 20.4 \% \)
+ 
+\hspace{8mm} iii) \( p_{60+}(m) = \frac{p(m \cap 60+)}{p(60+)} = \frac{20.4 \%
+  \cdot 36.811}{15.312} = 49.0 \% \)
+
+b) \hspace{5mm} i) \( B_{n=50; p=0.51 } (X=27) = 10.3 \% \)
+
+\hspace{8mm} ii) \( B_{n=50; p=0.51 } (X \leq 24) = 38.8 \%  \)
+
+\hspace{8mm} iii) \( B_{n=50; p=0.49 } (X \geq 19) = 1 - B_{n=50; p=0.49 } (X
+\leq 18) =  95.6 \%  \)
+
+\hspace{8mm} iv) \( B_{50; 0.51 } (26 \geq X \geq 28) = B_{50; 0.51
+} (X \leq 28) - B_{50; 0.51
+} (X \leq 26) = 80.2 \% - 60.1 \%  = 20.1 \%  \)
+
+
+\noindent
+c) \( 51 \% \cdot 14 \% = 7.1 \% \) 
+
+\noindent
+d) Die Rechnung basiert auf der Annahme, dass die
+Daten unkorreliert sind, was in Abwesendheit weiterer Informationen eine
+vernünftige Annahme ist (Prinzip der maximalen Entropie).  Das
+Rechenergebnis ist damit aber nur insoweit verlässlich, als diese Annahme
+gerechtfertig ist.
+
+\subsection*{Aufgabe 2 - Hypothesentest}
+
+a) Der Stichprobenumfang von \( n = 8 \) ist zu gering, als dass er als
+repräsentativ gelten könnte.  Die unumgänglichen Schwankungen einer solchen
+Erhebung sind damit zwar \emph{signifikant}, weil zu einem abweichenden Ergebnis
+führen, aber sie sind nicht \emph{relevant}.
+
+b) Es gilt das Konservativitäts-Prinzip: Die alte Hypthese wird erst
+verworfen, wenn die neue bestätigt wurde.  Da die Hürde hierfür hoch
+liegt, häuft man, wenn das Prinzip oft genug angewendet wurde, im Lauf der Zeit
+ausschließlich gut fundierte Thesen an.
+
+c) \( \sigma = \sqrt{n p (1-p)} = 3 \rightarrow n = \left( \frac{3}{\sqrt{0.05
+\cdot 0.95}} \right)^2 = 189.5 \rightarrow n = 190 \)
+
+d) \( H_0: p = 5 \% \), \( H_1: p < 5 \% \).  Annahmebereich \( A = [6;200] \),
+Irrtumswahrscheinlichkeit \( \alpha = 3.6 \% \).
+
+e) \( h = \frac{12}{200} = 0.06 = 6 \% \); \( I = [h - 1.64
+\sqrt{\frac{h(1-h)}{n}}, h + 1.64
+\sqrt{\frac{h(1-h)}{n}}] = [0.06 - 1.64
+\sqrt{\frac{0.06(0.94)}{200}}, 0.06 + 1.64
+\sqrt{\frac{0.06(0.94)}{200}}] = [3.2 \%, 8.7\%]
+\)
+
+\clearpage
+\subsection*{Aufgabe 3 - Gütekriterien beim Testen}
+
+a) Fehler 1. Art werden begangen, wenn Hypothesen verworfen werden, obwohl sie
+zutreffen.  Die Wahrscheinlichkeit dafür wird mit \( \alpha \) bezeichnet.
+
+Fehler 2. Art werden begangen, wenn Hypothesen \( H_0 \) akzeptiert werden,
+obwohl sie falsch sind.  Die Wahrscheinlichkeit dafür wird mit \( \beta \)
+bezeichnet.
+
+Die Sensitivität \( s \) eines Test gibt an, mit welcher Wahrscheinlichkeit eine
+falsche Hypothese \( H_0 \) korrekt abgelehnt wird.  Die Sensitivität entspricht
+damit dem Komplement des Fehlers 2. Art: \( s \equiv 1 - \beta \).
+
+Die Spezifität \( z \) eines Tests gibt an, mit welcher Wahrscheinlichkeit eine
+korrekte Hypothese \( H_0 \) verworfen wird.  Die Spezifität entspricht damit
+dem Fehler 1. Art: \( z \equiv \alpha \).
+
+b) Angenommen,  im Diagramm sei \( p_v \) der vermutete Wert und \( p_w \) der
+wahre Wert für einen Prozentsatz eines Merkmals einer Stichprobe.  Die
+Ergebnisse, die zur Annahme einer Hypothese \( H_0 \) führen und diejenigen,
+die zur Ablehnung führend, liegen auf unterschiedlichen Seiten einer wie auch
+immer gesetzten Grenze des Ablehnungsbereichs.  Verschiebt man diese Grenze nach
+rechts oder links, vergrößert sich der eine Bereich, während der andere
+schrumpft.
+ 
+c) 
+
+\vspace{-12pt}
+\begin{center}
+\begin{tabular}{c|c|c|c}
+ & \( inf \) & \( \overline{inf} \) &  \( \sum \) \\
+ \hline
+\( Test pos. \)  & 64.944 & 819.344  & 884.288 \\
+\( \overline{Test pos.} \) & 656 & 81.115.056 & 81.115.712 \\
+\hline
+\( \sum \) & 65.600 & 81.934.400 & 82.000.000 \\
+\end{tabular}
+\end{center}
+
+Die Anzahl der \emph{falsch positiv} getesteten ist trotz der relative hohen
+Testgenauigkeit mehr als 12 Mal höher als die der \emph{richtig positiv}
+getesteten.  Ob dieser Umstand der Bevölkerung zugemutet werden kann, ist
+bedenklich und Ermessenssache. 
+
+
+\newpage
+\section*{Vorschlag II: Markovketten}
+\label{sec:VorschlagII}
+
+\begin{minipage}[h]{0.6\textwidth}
+
+Im Auftrag des Senders "`RTL \(0,3\)"' entwickelt die
+erfolgsverwöhnte Entertainerin Stefanie Krää mit ihrer Produktionsfirma
+"`Krää's Licht- und Ton Studio"' eine neue, abendfüllende Spielshow names "`Müh
+dich, Kai T.!"'.
+
+\vspace{0.2cm}
+An der Seite von Moderator Kai Tzwetschge werden zwei 
+Kandidat:Innen den Abend lang gegeneinander "`Schnick, schnack, schnuck"'
+spielen.
+
+\vspace{0.2cm}
+Nachdem es während der Konzeption des Spiels zu einigen 
+Schwierigkeiten kam, sucht die Produktionsfirme einen weiteren
+technischen Berater - dich.
+\end{minipage}%
+\hspace{0.5cm}%
+\begin{minipage}[h]{0.3\textwidth}
+	\includegraphics[width=1\textwidth]{bilder/Gameshow.jpg}%\captionof{figure}{Ortsfaktoren}
+	\label{fig:Gameshow}
+	
+\end{minipage}
+
+\subsection*{Aufgabe 1 - Der Einstellungstest}
+
+Zunächst gilt es, den Einstellungstest zu bestehen.
+  
+a) Gegeben sind folgende
+Matrizen:
+
+\( A = \begin{pmatrix} 3 &  2 \\ 0 & -1 \end{pmatrix} \); 
+\( B = \begin{pmatrix} 2 &  4 \\ -2 & 0  \\ 1 & 3 \end{pmatrix} \); 
+\( C = \begin{pmatrix} 2 &  0 & -3 \\ 4 & 2 & 0 \end{pmatrix} \); 
+\( \vec a = \begin{pmatrix} -2  \\ 3 \end{pmatrix} \); 
+\( \vec b = \begin{pmatrix} 4  \\ 1 \\ 2 \end{pmatrix} \); 
+\( \lambda = 2 \)
+
+Berechne, falls möglich. 
+
+\begin{enumerate}[label=\roman*)]
+  \item \( A \vec a \) \hspace{1cm} ii) \( C \vec b \)  \hspace{1cm} iii) \( (C
+  B)^{-1} \)   \hspace{1cm} iv) \( (\lambda A)^3 \)  
+\end{enumerate} 
+
+b) Löse nach \( \vec x \) bzw. \( X \) auf.
+\begin{enumerate}[label=\roman*)]
+  \item \( \lambda y - A \vec x = \vec x \) \hspace{1cm} ii) \( (B
+  X)^{-1} = C \) \hspace{1cm} iii) \( (A^T 
+  B \vec x)^{T} = \vec y \)   
+\end{enumerate} 
+
+
+\subsection*{Aufgabe 2 - Basisvariante des Spiels}
+
+Die Kandidaten zeigen pro Runde zeitgleich mit den Händen die Symbole für
+\emph{Stein}, \emph{Schere} oder \emph{Papier}.  Es gilt: \emph{Stein schlägt
+Schere schlägt Papier schlägt Stein}.  Wer gewinnt, erhält einen Punkt;  wer
+verliert, verliert einen Punkt.  Bei gleichen Symbolen ändern sich die Punkte
+nicht.  Wer mit zwei Punkten führt, hat das Spiel gewonnen.
+
+a) Zeichne ein Zustandsdiagramm des Spielablaufs und bestimme die
+Übergangsmatrix \( U \).
+
+b) Bestimme die Fundamentalmatrix \( F \) des Spieles und damit die
+durchschnittliche Anzahl von Spielrunden.
+
+c) Zeige, dass die Wahrscheinlichkeiten, von \( Z_{-1}\), \(
+Z_{0} \) bzw. \(Z_{1} \) zu gewinnen bzw. zu verlieren, sich zu jeweils 1
+aufaddieren.
+
+
+\clearpage
+\subsection*{Aufgabe 3 - Modifizierte Spielregeln}
+
+Erste Rückmeldungen zu einem Testlauf vor Publikum sind allerdings 
+ernüchternd.  Die Zuschauer bemäkeln vor allem einen mangelnden
+Unterhaltungswert.  Das Studio versucht deswegen, das Konzept
+nachzubessern.
+
+Ein erster Vorschlag ist, die Menge der Symbole
+\emph{Stein}, \emph{Schere} und \emph{Papier} zu ergänzen.
+
+\begin{minipage}[h]{0.45\textwidth}
+
+\underline{Variante A}: Es werden zusätzlich die Symbolen
+\emph{Echse} und \emph{Spock} eingeführt, die sich folgendermaßen überbieten:
+
+\vspace{0.2cm}
+\emph{Schere schneidet Papier bedeckt Stein zerquetscht Echse vergiftet Spock
+zertrümmert Schere köpft Echse frisst Papier widerlegt Spock verdampft Stein
+schleift Schere.}
+
+\end{minipage}%
+\hspace{0.5cm}%
+\begin{minipage}[h]{0.45\textwidth}
+	\includegraphics[width=1\textwidth]{bilder/SchereSteinPapierSpockEchse.jpg}%\captionof{figure}{Ortsfaktoren}
+	\label{fig:SteinScherePapierSpockEchse}	
+\end{minipage}
+
+a) Beurteile, wie die Regeländerung die durchschnittliche Spieldauer
+beeinflusst.
+
+
+\begin{minipage}[h]{0.45\textwidth}
+
+\underline{Variante B}: Statt der Symbole \emph{Echse} und \emph{Spock} wird
+zusätzlich das Symbol \emph{Brunnen} eingeführt mit folgenden Regeln:
+
+\vspace{0.2cm}
+\emph{Stein zerschlägt Schere schneidet Papier
+bedeckt Brunnen verschluckt Stein, Papier umwickelt Stein, Brunnen verschluckt
+Schere.}
+
+\end{minipage}%
+\hspace{0.5cm}%
+\begin{minipage}[h]{0.45\textwidth}
+	\includegraphics[width=1\textwidth]{bilder/Brunnen.jpg}%\captionof{figure}{Ortsfaktoren}
+	\label{fig:Brunnen}	
+\end{minipage}
+
+
+b) Erörtere die Auswirkungen der Regeländerungen in Variante B auf die zu
+erwartende Taktik der Spieler und damit die vermutete Wahrscheinlichkeit der
+Symbole, gezeigt zu werden.
+
+
+\underline{Variante C}: Der bisherige Chefentwickler der Firma schlägt als
+letztes vor, ausschließlich die ursprünglichen
+Symbole \emph{Stein}, \emph{Schere} und \emph{Papier} zu verwenden.  Allerdings
+sollen die Spieler gegen eine künstliche Intelligenz antreten, die ihr 
+Verhalten mit steigender Rundenzahl immer besser voraussehen und somit den
+Sieg erschweren soll.
+
+Die von ihm vorgeschlagene Spielvariante hat angeblich folgende Fundamentalmatrix \( F_C \):
+
+\begin{center}
+\( F_C =  \frac{1}{6(3-\lambda)} \begin{pmatrix}
+ 4 - \lambda & 2 & 1  \\ 
+ 2 & 4 & 2 \\ 
+ \lambda & 2 \lambda & 3 
+\end{pmatrix} \)
+\end{center}
+
+Dabei soll der Parameter \( \lambda \) mit \( 0 \leq \lambda \leq 1 \) die
+Schwierigkeit modellieren, zu gewinnen (\( \lambda = 0\): normale Chance, \(
+\lambda = 1 \): keine Chance).
+
+c) Rekonstruiere die Übergangsmatrix \( U_C \), die dem Chefentwickler offenbar
+vorschwebt.  Diskutiere seinen Ansatz kritisch.
+
+
+\newpage
+\section*{Vorschlag II - Musterlösung} 
+\label{sec:VorschlagIIMusterloesung}
+
+\subsection*{Aufgabe 1 - Der Einstellungstest}
+
+\begin{minipage}[h]{0.45\textwidth}
+a) \hspace{5mm} i) \( A \vec a = \begin{pmatrix}
+ 0 \\ -3 \end{pmatrix} \) 
+
+\hspace{8mm} ii) \( C \vec b = \begin{pmatrix} 2 \\ 18 
+ \end{pmatrix} \)
+ 
+\hspace{8mm} iii) \( (C B)^{-1} = \frac{1}{20} \begin{pmatrix} 16 & 1 \\ -4 & 1
+\end{pmatrix} \)
+
+\hspace{8mm} iv) \( (\lambda A^3) = \lambda^3 A^3 = 8 \begin{pmatrix} 27 & 14 \\
+0 & -1 \end{pmatrix} \)
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}[h]{0.45\textwidth}
+b) \hspace{5mm} i) \( \vec x = \lambda (\underline{1}+A)^{-1} y \)
+
+\hspace{8mm} ii) \( X = B^{-1} C^{-1} \)
+
+\hspace{8mm} iii) \( \vec x = B^{-1} (A^T)^{-1} \vec y^T \)
+
+\vspace{2cm}
+
+\end{minipage}
+ 
+\subsection*{Aufgabe 2 - Basisvariante des Spiels}
+
+\begin{minipage}[h]{0.3\textwidth}
+a) \( \vec x \coloneqq \begin{pmatrix} 
+x_V \\ x_{-1} \\ x_0 \\ x_{1} \\ x_S
+\end{pmatrix}\)
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}[h]{0.3\textwidth}
+\begin{tikzpicture}[->, >=stealth', auto, semithick, node distance=3cm]
+\tikzstyle{every state}=[fill=white,draw=black,thick,text=black,scale=1]
+\node[state]    (Z2)   					  {$Z_0$};
+\node[state]    (Z1)[below left of=Z2]    {$Z_{-1}$};
+\node[state]    (Z3)[below right of=Z2]   {$Z_{1}$};
+\node[state]    (Z0)[above left of=Z1] 	  {$Z_S$};
+\node[state]    (Z4)[above right of=Z3]	  {$Z_V$};
+\path
+(Z2) edge[loop above]     	node{$\frac{1}{3}$}         (Z2)
+	 edge[left, bend right] node{$\frac{1}{3}$}         (Z1)
+	 edge[right, bend right]node{$\frac{1}{3}$}         (Z3)
+(Z1) edge[above, bend right]node{$\frac{1}{3}$}         (Z2)
+	 edge[loop below]		node{$\frac{1}{3}$}			(Z1)
+	 edge[left, bend left]	node{$\frac{1}{3}$}			(Z0)
+(Z3) edge[above, bend right]node{$\frac{1}{3}$}         (Z2)
+	 edge[loop below]		node{$\frac{1}{3}$}			(Z3)
+	 edge[right, bend right] node{$\frac{1}{3}$}		(Z4);
+\end{tikzpicture}
+\end{minipage}
+
+
+b) \( U = \begin{pmatrix} 
+ 1 & \frac{1}{3} & 0 & 0 & 0 \\
+ 0 & \frac{1}{3} & \frac{1}{3} & 0 & 0 \\
+ 0 & \frac{1}{3} & \frac{1}{3} & \frac{1}{3} & 0 \\
+ 0 & 0 & \frac{1}{3} & \frac{1}{3} & 0 \\
+ 0 & 0 & 0 & \frac{1}{3} & 1 \\
+\end{pmatrix}\)
+
+\( F = \begin{pmatrix}
+ \underline{1} - Q^T
+\end{pmatrix}^{-1} = \begin{pmatrix}
+ \begin{pmatrix}
+  1 & 0 & 0 \\
+  0 & 1 & 0 \\
+  0 & 0 & 1
+ \end{pmatrix}
+ - \begin{pmatrix}
+  \frac{1}{3} & \frac{1}{3} & 0 \\
+  \frac{1}{3} & \frac{1}{3} & \frac{1}{3} \\
+  0 & \frac{1}{3} & \frac{1}{3}
+ \end{pmatrix}
+\end{pmatrix}^{-1} = 
+\frac{1}{3} \begin{pmatrix}
+ 2 & -1 & 0\\ 
+ -1 & 2 & -1 \\ 
+ 0 & -1 & 2 
+\end{pmatrix}^{-1} = 
+\frac{1}{4} \begin{pmatrix}
+ 9 & 6 & 3 \\ 
+ 6 & 12 & 6 \\ 
+ 3 & 6 & 9 
+\end{pmatrix} \)
+
+\( \vec k = F \vec 1 = \frac{1}{2} \begin{pmatrix} 9 \\ 12 \\ 9
+\end{pmatrix} \)
+
+Die mittlere Rundezahl ist bei einem Start von \( Z_{0} \) aus \( k_0 =
+\frac{12}{2} = 6 \).
+
+c) \( \vec g_S = \underline{F} \vec a_S = \underline{F} \begin{pmatrix}
+ 0 \\ 0 \\ \frac{1}{3} \end{pmatrix} = \begin{pmatrix} \frac{1}{4} \\ \frac{2}{4} \\ \frac{3}{4}
+\end{pmatrix} \);  \( \vec g_V = \underline{F} \vec a_V = \underline{F} \begin{pmatrix}
+ \frac{1}{3} \\ 0 \\ 0 \end{pmatrix} = \begin{pmatrix} \frac{3}{4} \\
+ \frac{2}{4} \\ \frac{1}{4} \end{pmatrix} \); \( \vec g_V + \vec
+ g_S = \begin{pmatrix}
+ \frac{3}{4}
+ \\
+ \frac{2}{4} \\ \frac{1}{4} \end{pmatrix} + \begin{pmatrix}
+ \frac{1}{4}
+ \\
+ \frac{2}{4} \\ \frac{3}{4} \end{pmatrix} = \begin{pmatrix}
+ 1
+ \\
+ 1 \\ 1 \end{pmatrix} \)
+
+\clearpage
+\subsection*{Aufgabe 3 - Modifizierte Spielregeln}
+
+a) Es ergibt sich eine neue Übergangsmatrix: \( U_A = \frac{1}{5}
+\begin{pmatrix} 5 & 2 & 0 & 0 & 0 \\
+ 0 & 1 & 2 & 0 & 0 \\
+ 0 & 2 & 1 & 2 & 0 \\
+ 0 & 0 & 2 & 1 & 0 \\
+ 0 & 0 & 0 & 2 & 1 \\
+\end{pmatrix}\);
+
+  \( F_A^{-1} =  \frac{1}{5} \begin{pmatrix} 4 & -2 & 0 \\
+ -2 & 4 & -2 \\
+ 0 & -2 & 4
+\end{pmatrix}\);    \( F_A =  \frac{1}{8} \begin{pmatrix} 15 & 10 & 5 \\
+ 10 & 20 & 10 \\
+ 5 & 10 & 15
+\end{pmatrix}\);  \( \vec k_A = F_A \vec 1 = \frac{1}{4}
+\begin{pmatrix} 15 \\ 20 \\ 15 \end{pmatrix} \)
+
+Das Spiel in Variante A dauert nun im Schnitt \( k_0^A = \frac{20}{4} = 5 \)
+Runden.
+
+b) Die Siegchancen bei verschiedene Symbolen sind nun unterschiedlich - Brunnen
+und Papier gewinnt doppelt so oft wie Stein und Schere.
+
+Die Spieler könnten nun überlegen, öfter Brunnen und Papier zu zeigen.  Oder
+dies beim Gegenüber zu antizipieren und entsprechend besonders oft Papier zu
+zeigen.  Oder auch dies beim Gegenüber zu antizipieren und entsprechend oft
+Schere zu zeigen.
+
+Da diese Gedankenkette prinzipiell unendlich oft fortgeführt werden kann, ist
+eine Aussage über die tatsächlichen Übergangswahrscheinlichkeiten nicht
+zuverlässig zu treffen.
+
+Selbst eine empirische Analyse könnte wiederum in die Überlegungen einfließen
+und einen ähnlichen gedanklichen Zirkel einleiten und würden an der
+mangelnden Vorhersagbarkeit kaum etwas ändern.
+
+
+c) \( F_C^{-1} = \frac{1}{3} \begin{pmatrix} 
+ 2 & -1 & 0 \\
+ -1 & 2 & -1 \\
+ 0 & -\lambda & 2 
+\end{pmatrix} = \begin{pmatrix}
+ 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1
+\end{pmatrix} - \frac{1}{3} \begin{pmatrix}
+ 1 & 1 & 0 \\
+ 1 & 1 & 1 \\
+ 0 & \lambda & 1 \end{pmatrix} \)
+
+\( U_C = \frac{1}{3} \begin{pmatrix}
+3 & 1 & 0 & 0 & 0 \\
+0 & 1 & 1 & 0 & 0 \\
+0 & 1 & 1 & \lambda & 0 \\
+0 & 0 & 1 & 1 & 0 \\
+0 & 0 & 0 & 1  - \lambda & 3 
+\end{pmatrix} \) 
+
+Die Fundamentalmatrix lässt sich nur für konstante Übergangswahrscheinlichkeiten
+formulieren.  Das Modell des Chefentwicklers ist fehlerhaft.
+
+\newpage
+\section*{Vorschlag III: Affine Abbildungen}
+\label{sec:VorschlagIII}
+
+
+\begin{minipage}[h]{0.45\textwidth}
+	\includegraphics[width=1.0\textwidth]{bilder/Brautpaar2.jpg}%\captionof{figure}{Ortsfaktoren}
+	\label{fig:Brautpaar}
+
+\end{minipage}%
+\hspace{0.5cm}%
+\begin{minipage}[h]{0.45\textwidth}
+	\includegraphics[width=1.0\textwidth]{bilder/Lasershow.jpg}%\captionof{figure}{Ortsfaktoren}
+	\label{fig:Lasershow}
+\end{minipage}
+
+Du bist zu einer Hochzeit eingeladen!  Die Brautleute wünschen sich eine
+Lasershow, und du bist dafür zuständig, die Anlage zu bedienen.
+
+
+\subsection*{Aufgabe 1 - Funktionstest der Laseranlage}
+
+Zunächst soll die Anlage getestet werden.  
+
+Im Display des Projektors sehen wir die quadratische \emph{Urbildebene}, deren
+einheitenlose Koordinaten sich zwischen \( -1 \leq x \leq 1\) und \( -1 \leq y
+\leq 1 \) bewegen.
+
+Für den Funktionstest stellen wir den Beamer senkrecht vor die nächstbeste
+glatte Hauswand und lassen den Laser senkrecht dagegen strahlen.
+
+Die Wand hat eine Breite von \( b = 6m \) und Höhe von \( h = 4 m \).
+
+a) Skizziere die \emph{Bildebene}.  Zeichne ein Koordinatensystem so ein, dass
+möglichst viel Projektionsfläche genutzt wird, dass Bild aber
+unverzerrt quadratisch bleibt.  Wähle für die Bildkoordinaten die Einheit
+\emph{Meter}.
+
+b) Stelle die Abbildungsgleichung \( \alpha \) auf.
+
+c) Bestimme die Gleichung des Bildes der Geraden \( g: \vec x = \begin{pmatrix}
+0.2 \\ 0.3 \end{pmatrix}  + \lambda \begin{pmatrix} 0.5 \\ 1 \end{pmatrix} \)
+
+d) Bestimme das Urbild der Geraden \( h': \vec x' = \begin{pmatrix}
+2 \\ -1 \end{pmatrix}  + \mu \begin{pmatrix} -1 \\ 1 \end{pmatrix} \)
+
+e) Bestimme den Schnittwinkel von \( g \) und \( h \).
+
+
+% Es stellt sich heraus, dass das Bild spiegelverkehrt ist. Löse das Problem.
+
+
+
+\subsection*{Aufgabe 2 - Ausrichtung auf's Hausdach}
+
+Für die Feier soll als Projektionsfläche ein
+großes Hausdach mit einer Länge (von First zu First) von \( b =
+14 m \) und einer Breite (von Giebel zu Traufe) von \( h = 6 m \) genutzt
+werden.  Gebeamt wird von einem hohen Baum aus, so dass der Laserstrahl wieder
+weitgehend senkrecht auf die Fläche trifft.
+
+a) Bestimme die Abbildungsgleichung \( \beta \) für eine senkrechte Projektion
+auf's Hausdach, so dass die Bildfläche möglichst groß ist, aber weiterhin
+unverzerrt quadratisch bleibt.
+
+\vspace{0.2cm}
+Was die Sache nun etwas kniffliger macht: zum einen weist das Dach eine
+Steigung von \( \alpha = 50^\circ\) gegen die Horizontale auf.  Zum anderen
+werden die Brautleute so sitzen, dass sie im \( \beta = 20^\circ \)-Winkel gegen
+die Stirnseite des Hauses auf die Projektionsfläche schauen (siehe Skizze).  Das
+Bild muss deswegen verzerrt dargestellt werden, wenn es aus Sicht der Brautleute unverzerrt erscheinen soll.
+
+b) Bestimme die Abbildungsgleichung \( \gamma \) so, dass das Bild aus Sicht
+der Brautleute möglichst großflächig, aber unverzerrt erscheint.  Wähle als
+Koordinatensystem des Bildraums weiterhin die Ebene der Dachfläche. 
+
+
+\subsection*{Aufgabe 3 - Projizieren von Figuren}
+
+Jetzt, wo die Anlage aufgebau und justiert ist, können Figuren projiziert
+werden.
+
+Testweise soll zunächst ein Quader mit den Seitenverhältnissen 3:4:5 gezeigt
+werden.  
+
+a) Gib die Koordinaten der Eckpunkte eines Quaders mit den angegeben
+Seitenverhältnissen an.  Diese sollen den Wertebereich  \( -1 \leq 
+x \leq 1 \) bzw. \( -1 \leq y \leq 1 \) bzw. \( -1 \leq z \leq 1 \) möglichst
+breit umfassen.
+
+b) Erst einmal soll der dreidimensionale Quader auf die
+zweidimensionale Bildebene projiziert werden.  Nenne drei
+Projektionsrichtungen, die \textbf{nicht} gewählt werden dürfen,  wenn im Bild
+alle Kanten des Quaders zu erkennen sein sollen.
+
+\begin{minipage}[h]{0.45\textwidth}
+Wir wollen nun das rechts dargestellte Herz projizieren. 
+
+\vspace{0.2cm}
+c) Gib eine Vektordarstellung dieses Herzens im Wertebereich \( -1 \leq 
+x \leq 1 \) bzw. \( -1 \leq y \leq 1 \) an.
+
+\end{minipage}%
+\hspace{0.5cm}%
+\begin{minipage}[h]{0.45\textwidth}
+\begin{tikzpicture}[scale=0.8]
+ \draw (-2,0) -- (0,-2) -- (2,0);
+ \draw (2,0) arc (-45:135:1.41);
+ \draw (0,2) arc (45:225:1.41);
+ \draw [thick, ->] (-2.5,0) -- (2.5,0) node[right] {\(x\)};
+ \draw [thin, dashed] (-2,0) -- (0,2);
+ \draw [thin, dashed] (2,0) -- (0,2);
+ \draw [thick, ->] (0,-2.3) -- (0,2.7) node[above] {\(y \)};
+\end{tikzpicture}
+\end{minipage}
+
+
+Zum Schluss soll das Herz mit einer Winkelgeschwindigkeit von \( \omega =
+\frac{2 \pi}{3 s} \) um die y-Achse rotieren.
+
+d) Gib die Matrixdarstellung einer Abbildung \( \delta \) an, die die
+Herz-Koordinaten in der geforderten Weise rotiert.
+
+
+\vspace{1cm}
+\includegraphics[width=1.0\textwidth]{bilder/SchildkroetenfamilieCut.jpg}%\captionof{figure}{Ortsfaktoren}
+\label{fig:Schildkroetenfamilie}
+		
+
+\newpage
+\section*{Vorschlag III - Musterlösung} 
+\label{sec:VorschlagIIIMusterloesung}
+
+\subsection*{Aufgabe 1 - Funktionstest der Laseranlage}
+
+a) Bild: Hauswand mit mittig platziertem Koordinatensystem
+
+b) \( \alpha: \vec x' = \begin{pmatrix} 
+ 2 & 0 \\ 0 & 2 \end{pmatrix} \vec x \)
+
+c) \( g': \vec x' = \begin{pmatrix} 
+ 2 & 0 \\ 0 & 2 \end{pmatrix} \begin{pmatrix} 
+ 0,2 + \lambda 0,5 \\ 0,3 + \lambda 1 \hspace{3mm} \end{pmatrix} =
+ \begin{pmatrix} 0,4 \\ 0,6 \end{pmatrix} + \lambda \begin{pmatrix} 
+ 1 \\ 2 \end{pmatrix} \)
+ 
+d)  \vspace{-18pt}
+	\begin{align*}
+  	 \alpha^{-1}: \vec x &= \frac{1}{2} \begin{pmatrix}  1 & 0 \\ 0 & 1
+  	 \end{pmatrix} \vec x' \\
+  	 				h: \vec x &= \frac{1}{2} \begin{pmatrix} 
+ 1 & 0 \\ 0 & 1 \end{pmatrix} \begin{pmatrix} 2 + \mu \cdot (-1) \\ -1 + \mu
+ \cdot 1 \hspace{7mm}
+ \end{pmatrix} \\
+  	 				&= \frac{1}{2} \begin{pmatrix} 2 \\
+  	 				1  \end{pmatrix} + \frac{\mu}{2} \begin{pmatrix} -1 \\ 1 \end{pmatrix}
+	\end{align*}
+	
+e) \vspace{-18pt}
+	\begin{align*}
+		\alpha &= |\tan^{-1}(m_g)| + |\tan^{-1}(m_h)| \\
+		 &= \left|\tan^{-1}\left( \frac{0,5}{1} \right)\right| +
+		 \left|\tan^{-1}\left(\frac{-1}{1} \right)\right| \\
+		&= 26,6^{\circ} + 45^{\circ} \\
+		&= 71,6^{\circ}	
+   \end{align*}
+
+\subsection*{Aufgabe 2 - Ausrichtung auf's Hausdach}
+
+a) Da das Dach länger als breit ist, ist das limitierende Maß die Dachbreite b. 
+Als Abbildungsgleichung ergibt sich damit: \( \beta: \vec x' =
+\frac{b}{2} \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} \vec x
+= 3m \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} \vec x \)
+
+b) Aus der Vogelperspektive erscheint die Dachbreite \( b \) verkürzt um \( b' =
+b \cdot \cos(\alpha)\).  Ist das Dach um \( 30^\circ \) gedreht, wandert ein Punkt
+mit y-Koordinate \(b \) um \( x = b' \sin(\beta) = b \cos(\alpha)  \sin(\beta)
+\) nach links. Zur Kompensation muss er also um dieses Stück nach rechts
+verschoben werden.
+
+Nun muss noch die Perspektive des Brautpaares kompensiert werden.
+
+In x-Richtung erscheinen Längen verkürzt: \( l_x' = l_x \cos(\beta) \). 
+Deswegen müssen x-Koordinaten um den Faktor \( \frac{1}{\cos(\beta)} \)
+verbreitert werden.
+
+In y-Richtung erscheinen Längen ebenfalls verkürzt: \( l_y' = l_y \sin(\alpha)
+\).  Da das Bild aber in y-Richtung schon die maximale Größe hat, muss, statt
+die y-Richtung zu vergrößern, die x-Richtung nochmals
+verkleinert werden, nämlich um den Faktor \( \sin(\alpha) \).
+
+Insgesamt ergibt sich damit: \( \gamma: \vec x' =
+\frac{b}{2} \begin{pmatrix} \frac{\sin(\alpha)}{\cos(\beta)} & 0 \\ 
+\cos(\alpha) \tan(\beta) \cdot \frac{\sin(\alpha)}{\cos(\beta)} & 1
+\end{pmatrix} \vec x = 3 m \begin{pmatrix} 0.815 & 0
+\\
+0.19 & 1 \end{pmatrix} \vec x \)
+
+
+\clearpage
+\subsection*{Aufgabe 3 - Projizieren von Figuren}
+
+a) \vspace{-18pt}
+	\begin{align*}
+		A=(1, -0.8, -0.6) & \hspace{5mm} B=(1, 0.8, -0.6) \\
+		C=(-1, 0.8, -0.6) & \hspace{5mm} D=(-1, -0.8, -0.6) \\
+		E=(1, -0.8, 0.6) & \hspace{5mm} F=(1, 0.8, 0.6) \\
+		G=(-1, 0.8, 0.6) & \hspace{5mm} H=(-1, -0.8, 0.6)
+   \end{align*}
+
+b) Alle, bei denen Ecken auf Ecken projiziert werden, also z.B. 
+	\begin{align*}
+		v_{AE}=(2, 0, 0) \\
+		v_{AF}=(2, 1.6, 0) \\
+		v_{AG}=(2, 0, 1.2)
+   \end{align*}
+
+
+c) Geraden: \vspace{-18pt}
+\begin{align*}
+	g_1: \vec x &= \begin{pmatrix} 0 \\ -0.5 \end{pmatrix} + \lambda_1
+	\begin{pmatrix} 1 \\ 1 \end{pmatrix} \\
+	 \lambda_1 &\in
+[0; \frac{1}{\sqrt{2}}] \\
+	g_2: \vec x &= \begin{pmatrix} 0 \\ -0.5 \end{pmatrix} + \lambda_2
+	\begin{pmatrix} -1 \\ 1 \end{pmatrix} \\
+	\lambda_2 &\in
+[0; \frac{1}{\sqrt{2}}]
+\end{align*}
+
+\hspace{0.2cm} Halbkreisbögen: \vspace{-18pt}
+\begin{align*}
+  k_1: \vec x &= \begin{pmatrix}
+0.25 \\ 0.25 \end{pmatrix} + \frac{1}{2 \sqrt{2}} \begin{pmatrix}
+\cos(\phi_1) \\ \sin(\phi_1) \end{pmatrix}  \\
+			\phi_1 &\in [-45^\circ; 135^\circ]  \\
+  k_2: \vec x &= \begin{pmatrix}
+-0.25 \\ 0.25 \end{pmatrix} + \frac{1}{2 \sqrt{2}} \begin{pmatrix}
+\cos(\phi_2) \\ \sin(\phi_2) \end{pmatrix}  \\
+			\phi_2 &\in [45^\circ; 225^\circ]  
+\end{align*}
+
+d) Rotation um die z-Achse allgemein: \( \begin{pmatrix}
+ \cos(\phi) & 0 & -\sin(\phi) \\
+ 0 & 1 & 0 \\
+ \sin(\phi) & 0 & \cos(\phi)
+\end{pmatrix} \).
+
+\hspace{0.3cm} Hier werden nur die xy-Koordinaten transformiert, damit bleibt:
+
+\hspace{0.3cm} \( \delta:
+\vec x' = \begin{pmatrix} 
+ \cos(\phi) & 0 \\
+ 0 & 1 \end{pmatrix}\) mit \( \phi = \frac{2 \pi}{3 s} \cdot t \)
+
+%e) \( \epsilon: \vec x' = \delta \gamma \vec x = \frac{b}{2} \begin{pmatrix}
+%\frac{\sin(\alpha)}{\cos(\beta)} \cdot \cos(\phi) & 0 \\
+%\cos(\alpha) \tan(\beta) \cdot \frac{\sin(\alpha)}{\cos(\beta)} \cdot
+% \cos(\phi) & 1 \end{pmatrix} \vec x \)
+
+\end{document}

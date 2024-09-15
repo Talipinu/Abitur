@@ -1,0 +1,14 @@
+#TeXlipse project settings
+#Thu Oct 29 08:35:53 CET 2020
+markTmpDer=true
+builderNum=2
+outputDir=
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=tmp
+mainTexFile=abiMathe20.tex
+outputFile=Abitur Mathe 20.pdf
+langSpell=de
+markDer=true
+srcDir=
